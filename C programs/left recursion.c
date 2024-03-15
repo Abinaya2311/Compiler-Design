@@ -24,7 +24,7 @@ while(production[i][index]!=0 && production[i][index]!='|')index++;
 if(production[i][index]!=0) { beta=production[i][index+1];
 printf("Grammar without left recursion:\n");
 printf("%c->%c%c\'",non_terminal,beta,non_terminal);
-printf("\n%c\'->%c%c\'|E\n",non_terminal,alpha,non_terminal);
+printf("\n%c\'->%c%c%c\'|E\n",non_terminal,alpha,non_terminal);
 }
 else
 printf(" can't be reduced\n");
